@@ -1,0 +1,109 @@
+body {
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/blue/blue-background-088FDC-8ecd0503.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.containerIdentify {
+    position: relative;
+    left: 850px;
+    width: 100%;
+    margin: 20px;
+}
+.containerContact {
+    position: relative;
+    top: -280px;
+    left: 5px;
+    width: 800px;
+}
+/*.containerInformation {
+    position: relative;
+    left: 900px;
+    top: -223px;
+    width: 750px;
+    margin: 20px;
+}*/
+
+#tableIdentify {
+    position: relative;
+    left: 100px;
+    border-spacing: 10px;
+}
+
+.form-control {
+    width: 550px;
+    height: 25px;
+    font-size: 15px;
+}
+
+fieldset {
+    color: white;
+    border-color: white;
+}
+
+legend {
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+#tableContact {
+    border-spacing: 10px;
+}
+
+
+
+.form-control-Infomation {
+    width: 400px;
+    height: 30px;
+}
+
+#tableInformation {
+    position: relative;
+    left: 100px;
+    border-spacing: 10px;
+}
+#add-Button{
+    position: relative;
+    left: 1200px;
+    top: -260px;
+}
+button{
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.add-icon-button{
+    background-color: #32cd32;
+    background-color: whitesmoke;
+    color: red;
+    font-weight: bold;
+}
+.edit-del-button{
+    background-color: whitesmoke;
+    color: red;
+    font-weight: bold;
+    width: 100px;
+}
+#list-table{
+    position: absolute;
+    top:440px;
+    left: 5px;
+    background-color: white;
+    width: 1700px;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.border{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+.border td:last-child{
+    border: none;
+}

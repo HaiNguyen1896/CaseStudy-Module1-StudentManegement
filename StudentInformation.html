@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="studenInformation.css">
+</head>
+<body onload="displayOldest(studentArr)">
+<a style="float: right;font-size: larger" href="StudentManegementPage.html">Đến trang quản lý</a>
+<a style="float: left;font-size: larger" href="Login.html">Quay về trang đăng nhập</a>
+<h1>BẢNG TỔNG HỢP CHUNG THÔNG TIN SINH VIÊN CỦA LỚP C0423H1</h1>
+<h3>Top 3 học sinh lớn tuổi nhất trong lớp</h3>
+<div class="StudentTable">
+<table style="border-collapse: collapse">
+    <tr>
+        <td>ID</td><td>Tên</td><td>Ngày sinh</td>
+    </tr>
+ <tbody id="oldestStudent"></tbody>
+</table>
+
+</div>
+<h3>Top 3 học sinh nhỏ tuổi nhất trong lớp</h3>
+<div class="StudentTable">
+    <table style="border-collapse: collapse">
+        <tr>
+            <td>ID</td><td>Tên</td><td>Ngày sinh</td>
+        </tr>
+        <tbody id="youngestStudent"></tbody>
+    </table>
+
+</div>
+</body>
+</html>
+<script src="StudentManegement.js">
+</script>

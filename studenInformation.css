@@ -1,0 +1,19 @@
+body {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/blue/blue-background-088FDC-8ecd0503.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.StudentTable {
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    border: solid 1px;
+    width: 500px;
+}
+

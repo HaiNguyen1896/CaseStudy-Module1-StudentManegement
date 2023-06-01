@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quản lý sinh viên </title>
+
+    <link rel="stylesheet" type="text/css" href="StdManegement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1 style="text-align: center">QUẢN LÝ THÔNG TIN SINH VIÊN</h1>
+<a style="float: right;position: relative;top: -50px;left: -10px;font-size: larger" href="Login.html">Đăng xuất</a>
+<a style="float: right;position: relative;top: -50px;left: -1350px;font-size: larger" href="StudentInformation.html">Quay về trang thông tin chung</a>
+<div class="containerIdentify">
+
+<form>
+    <fieldset>
+        <legend>Thông tin cá nhân</legend>
+        <table id="tableIdentify">
+            <tr>
+                <td><label for="identify">ID:</label></td>
+                <td><input type="text" id="identify" placeholder="Nhập mã số id" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><label for="fullname">Họ và tên:</label></td>
+                <td><input type="text" id="fullname" placeholder="Nhập họ tên" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+<!--                    <input type="radio" value="Nam" id="maleGender">Nam-->
+<!--                    <input type="radio" value="Nữ" id="femaleGender">Nữ-->
+                <input type="text" id="gender" placeholder="Nhập giới tính" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dateofbirth">Ngày sinh</label></td>
+                <td><input type="text" id="dateofbirth" placeholder="Nhập ngày sinh dddd/mm/dd" class="form-control"></td>
+            </tr>
+            <tr>
+                <td><label for="birthplace">Nơi sinh</label></td>
+                <td><input type="text" id="birthplace" placeholder="Nhập nơi sinh" class="form-control"></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</div>
+<div class="containerContact">
+<fieldset>
+<table id="tableContact">
+    <legend>Thông tin liên lạc</legend>
+    <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" placeholder="@gmail.com" class="form-control"></td>
+    </tr>
+    <tr>
+        <td><label for="phone">SĐT</label></td>
+        <td><input type="number" id="phone" placeholder="Nhập số điện thoại" class="form-control"></td>
+    </tr>
+    <tr>
+        <td><label for="adress">Địa chỉ</label></td>
+        <td><input type="text" id="adress" placeholder="Nhập địa chỉ thường trú" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Quê Quán</td>
+        <td>
+            <select name="city" id="country" style="height: 25px" onchange="inputLocation()">
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Nam Định">Nam Định</option>
+                <option value="Bắc Giang">Bắc Giang</option>
+                <option value="Thái Bình">Thái Bình</option>
+                <option value="Thanh Hoá">Thanh Hóa</option>
+                <option value="Hà Nam">Hà Nam</option>
+                <option value="Nơi khác">Nơi khác...</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Ảnh</td>
+        <td><input type="text" id="img" class="form-control"></td>
+    </tr>
+</table>
+</fieldset>
+</div>
+<div id="add-Button">
+    <button class="add-icon-button" onclick="addStudent()"><i class='fa fa-plus'></i>Thêm</button>
+    <button onclick="saveInfo()" class="add-icon-button">Lưu</button>
+    <button onclick="findStudent()" class="add-icon-button">Tìm</button>
+</div>
+<table id="list-table">
+    <thead class="border">
+    <tr>
+        <td >ID</td>
+        <td>Tên SV</td>
+        <td>Giới tính</td>
+        <td>Ngày sinh</td>
+        <td>Nơi sinh</td>
+        <td>Email</td>
+        <td>SĐT</td>
+        <td>Địa chỉ</td>
+        <td>Quê quán</td>
+        <td>Ảnh</td>
+        <td></td>
+
+    </tr>
+    </thead>
+    <tbody id="list">
+    </tbody>
+</table>
+</body>
+</html>
+<script src="StudentManegement.js">
+
+
+</script>
+

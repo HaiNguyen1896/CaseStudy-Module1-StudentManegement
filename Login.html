@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="logincss.css">
+</head>
+<body>
+<div id="cover">
+    <form action="" id="form-login" method="get">
+        <h1 class="form-heading">LOGIN</h1>
+        <div class="form-group">
+            <input type="text" id="loginAccount" class="form-input" placeholder="Tên đăng nhập">
+        </div>
+        <p id="alertLoginInput" style="color: red"></p>
+        <div class="form-group">
+            <input type="password" id="loginPassword" class="form-input" placeholder="Mật khẩu">
+        </div>
+        <p id="alertPassInput" style="color: red"></p>
+        <button type="button"  value="Đăng nhập" class="acess-form" onclick="login()">Đăng Nhập</button>> <button type="button" value="Đăng ký" class="acess-form" onclick="register()">Đăng ký</button>>
+    </form>
+</div>
+
+</body>
+</html>
+
+<script src="Login.js"></script>
